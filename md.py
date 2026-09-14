@@ -23,7 +23,7 @@ def calcenergy(a):
     epot = a.get_potential_energy() / len(a)
     ekin = a.get_kinetic_energy() / len(a)
     temp = a.get_temperature() 
-    etot = epot - ekin
+    etot = epot + ekin
     return epot, ekin, etot, temp
 
 def run_md():
